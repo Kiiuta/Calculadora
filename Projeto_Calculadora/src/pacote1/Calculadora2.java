@@ -98,7 +98,7 @@ public class Calculadora2 {
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 				String EnterNumber = txtDisplay.getText() + btn6.getText();
 				txtDisplay.setText(EnterNumber);
 			}
@@ -123,7 +123,7 @@ public class Calculadora2 {
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String EnterNumber = txtDisplay.getText() + btn7.getText();
+				String EnterNumber = txtDisplay.getText() + btn4.getText();
 				txtDisplay.setText(EnterNumber);
 			}
 		});
@@ -132,26 +132,63 @@ public class Calculadora2 {
 		frame.getContentPane().add(btn4);
 		
 		JButton btn3 = new JButton("3");
+		btn3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String EnterNumber = txtDisplay.getText() + btn3.getText();
+				txtDisplay.setText(EnterNumber);
+				
+			}
+		});
 		btn3.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn3.setBounds(94, 286, 50, 50);
 		frame.getContentPane().add(btn3);
 		
 		JButton btn2 = new JButton("2");
+		btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String EnterNumber = txtDisplay.getText() + btn2.getText();
+				txtDisplay.setText(EnterNumber);
+				
+			}
+		});
 		btn2.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn2.setBounds(160, 286, 50, 50);
 		frame.getContentPane().add(btn2);
 		
 		JButton btn1 = new JButton("1");
+		btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String EnterNumber = txtDisplay.getText() + btn1.getText();
+				txtDisplay.setText(EnterNumber);
+				
+			}
+		});
 		btn1.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn1.setBounds(224, 286, 50, 50);
 		frame.getContentPane().add(btn1);
 		//---------------- linha 4
 		JButton btn0 = new JButton("0");
+		btn0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String EnterNumber = txtDisplay.getText() + btn0.getText();
+				txtDisplay.setText(EnterNumber);
+			}
+		});
 		btn0.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn0.setBounds(94, 345, 50, 50);
 		frame.getContentPane().add(btn0);
 		
 		JButton btnDot = new JButton(".");
+		btnDot.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String EnterNumber = txtDisplay.getText() + btnDot.getText();
+				txtDisplay.setText(EnterNumber);
+			}
+		});
 		btnDot.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btnDot.setBounds(160, 345, 50, 50);
 		frame.getContentPane().add(btnDot);
@@ -194,7 +231,8 @@ public class Calculadora2 {
 					answer = String.format("%.2f",result);
 					txtDisplay.setText(answer);
 				}
-				else if (operations == "") {
+				else if (operations == "+/-") {
+					
 					
 				}
 				
@@ -221,7 +259,7 @@ public class Calculadora2 {
 			}
 		});
 		btnC.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnC.setBounds(303, 63, 50, 50);
+		btnC.setBounds(232, 101, 50, 50);
 		frame.getContentPane().add(btnC);
 		
 		JButton btnPlus = new JButton("+");
@@ -277,14 +315,6 @@ public class Calculadora2 {
 		btnMult.setBounds(303, 286, 50, 50);
 		frame.getContentPane().add(btnMult);
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("On");
-		rdbtnNewRadioButton.setBounds(19, 63, 45, 25);
-		frame.getContentPane().add(rdbtnNewRadioButton);
-		
-		JRadioButton rdbtnOff = new JRadioButton("off");
-		rdbtnOff.setBounds(19, 93, 45, 25);
-		frame.getContentPane().add(rdbtnOff);
-		
 		JButton btnBackSpace = new JButton("<--");
 		btnBackSpace.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -300,7 +330,7 @@ public class Calculadora2 {
 			}
 		});
 		btnBackSpace.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnBackSpace.setBounds(94, 106, 116, 40);
+		btnBackSpace.setBounds(22, 82, 116, 40);
 		frame.getContentPane().add(btnBackSpace);
 		
 		JButton btnPM = new JButton("/u00B1");
@@ -327,7 +357,7 @@ public class Calculadora2 {
 			}
 		});
 		btnPrecent.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnPrecent.setBounds(224, 101, 60, 50);
+		btnPrecent.setBounds(160, 101, 60, 50);
 		frame.getContentPane().add(btnPrecent);
 		
 	
