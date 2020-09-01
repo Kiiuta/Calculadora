@@ -330,7 +330,7 @@ public class Calculadora2 {
 			}
 		});
 		btnBackSpace.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnBackSpace.setBounds(22, 82, 116, 40);
+		btnBackSpace.setBounds(28, 106, 116, 40);
 		frame.getContentPane().add(btnBackSpace);
 		
 		JButton btnPM = new JButton("/u00B1");
